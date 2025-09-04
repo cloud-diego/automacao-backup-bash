@@ -38,12 +38,16 @@ Conectei-me à instância usando o comando:
 ssh -i labsuser.pem ec2-user@<public-ip>
 ```
 
+<img width="1302" height="734" alt="01-conexao-ssh" src="https://github.com/user-attachments/assets/29d7c102-7e4d-4115-8313-be606a85fc77" />
+
 ### 2. Criação do Script de Backup  
 
 Após me conectar, criei o arquivo do script chamado `backup.sh` com o comando `touch` e adicionei permissões de execução com: 
 ```bash
 sudo chmod 755 backup.sh
 ```
+
+<img width="1302" height="734" alt="02-criacao-arquivo" src="https://github.com/user-attachments/assets/0f712a41-a5bb-4005-bc19-e937d009b309" />
 
 Utilizei o **vi** para escrever o código: 
 ```bash
@@ -56,6 +60,8 @@ BACKUP="/home/$USER/backups/$DAY-backup-CompanyA.tar.gz"
 tar -csvpzf $BACKUP /home/$USER/CompanyA
 ```
 
+<img width="1302" height="734" alt="03-codigo-bash" src="https://github.com/user-attachments/assets/5598233c-cae6-4f7e-b602-87cfc8425df6" />
+
 ### 3. Execução e Validação  
 
 Executei o script com o comando: 
@@ -63,12 +69,16 @@ Executei o script com o comando:
 ./backup.sh
 ```
 
-Ele mostrou o progresso da compactação. 
+Ele mostrou o progresso da compactação.
+
+<img width="1302" height="734" alt="04-execucao-script" src="https://github.com/user-attachments/assets/b4f130b5-6c91-4f4d-8e8b-81c409759656" />
+
 
 Para confirmar que o backup havia sido criado, usei o comando: 
 ```bash
 ls backups/
 ```
+<img width="1302" height="734" alt="05-confirmacao-backup" src="https://github.com/user-attachments/assets/36b585a8-6d85-467b-9d24-93f1524014a0" />
 
 Esse comando listou o arquivo `.tar.gz` com o nome e data corretos na pasta `backups`.
 
