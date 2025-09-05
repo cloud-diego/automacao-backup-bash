@@ -2,6 +2,19 @@
 
 Este projeto documenta um laboratório prático em uma instância Amazon Linux EC2, com foco na automação de tarefas por meio de scripts Bash. O objetivo foi aprender a criar um script que realiza o backup de uma pasta e a executá-lo, o que é fundamental para a automação de rotinas em ambientes Linux.
 
+# 📂 **Estrutura do Projeto**
+
+```
+automacao-backup-bash/
+│
+├── imagens/
+│
+└── README.md
+│
+└── backups.sh
+```
+
+
 ## 🛠️ Tecnologias Utilizadas
 
 <div align="left"> 
