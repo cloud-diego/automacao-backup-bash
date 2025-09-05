@@ -91,6 +91,7 @@ Para confirmar que o backup havia sido criado, usei o comando:
 ```bash
 ls backups/
 ```
+
 <img width="1302" height="734" alt="05-confirmacao-backup" src="https://github.com/user-attachments/assets/36b585a8-6d85-467b-9d24-93f1524014a0" />
 
 Esse comando listou o arquivo `.tar.gz` com o nome e data corretos na pasta `backups`.
